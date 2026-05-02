@@ -1,0 +1,42 @@
+# Add Java compiled files
+echo "# Compiled files" >> .gitignore
+echo "*.class" >> .gitignore
+echo "*.jar" >> .gitignore
+echo "*.war" >> .gitignore
+echo "*.ear" >> .gitignore
+
+# Add IDE files
+echo "" >> .gitignore
+echo "# IDE files" >> .gitignore
+echo ".idea/" >> .gitignore
+echo "*.iml" >> .gitignore
+echo ".project" >> .gitignore
+echo ".classpath" >> .gitignore
+echo ".settings/" >> .gitignore
+echo "*.iws" >> .gitignore
+
+# Add build directories
+echo "" >> .gitignore
+echo "# Build directories" >> .gitignore
+echo "target/" >> .gitignore
+echo "bin/" >> .gitignore
+echo "out/" >> .gitignore
+echo "build/" >> .gitignore
+
+# Add OS files
+echo "" >> .gitignore
+echo "# OS files" >> .gitignore
+echo ".DS_Store" >> .gitignore
+echo "Thumbs.db" >> .gitignore
+
+# Add log files
+echo "" >> .gitignore
+echo "# Log files" >> .gitignore
+echo "*.log" >> .gitignore
+
+# Add database files (if using embedded DB)
+echo "" >> .gitignore
+echo "# Database files" >> .gitignore
+echo "*.db" >> .gitignore
+echo "*.sqlite" >> .gitignore
+echo "*.h2.db" >> .gitignore
