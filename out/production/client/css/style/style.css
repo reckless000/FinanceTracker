@@ -1,0 +1,222 @@
+/* ====================================================================
+   Finance Tracker – style.css
+   Path: client/src/main/resources/css/style/style.css
+   ==================================================================== */
+
+/* ── Auth screens (gradient background) ─────────────────────────────── */
+.root-container {
+    -fx-background-color: linear-gradient(to bottom, #667eea 0%, #764ba2 100%);
+}
+
+.title-label {
+    -fx-text-fill: white;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial";
+}
+
+.subtitle-label {
+    -fx-text-fill: rgba(255,255,255,0.80);
+    -fx-font-size: 13px;
+}
+
+/* Labels on coloured background */
+.field-label {
+    -fx-text-fill: rgba(255,255,255,0.92);
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* Labels on white background (inside tabs) */
+.field-label-dark {
+    -fx-text-fill: #455A64;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* ── Input fields ──────────────────────────────────────────────────── */
+.input-field {
+    -fx-padding: 10 14 10 14;
+    -fx-font-size: 14px;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: rgba(255,255,255,0.45);
+    -fx-background-color: rgba(255,255,255,0.90);
+}
+.input-field:focused {
+    -fx-border-color: white;
+    -fx-background-color: white;
+}
+
+.input-field-dark {
+    -fx-padding: 10 14 10 14;
+    -fx-font-size: 14px;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #CFD8DC;
+    -fx-background-color: white;
+}
+.input-field-dark:focused {
+    -fx-border-color: #5C6BC0;
+}
+
+.combo-field {
+    -fx-font-size: 14px;
+    -fx-background-radius: 6;
+}
+.date-field {
+    -fx-font-size: 14px;
+    -fx-background-radius: 6;
+}
+
+/* ── Buttons ───────────────────────────────────────────────────────── */
+.btn-primary {
+    -fx-background-color: #1E88E5;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.btn-primary:hover   { -fx-background-color: #1565C0; }
+.btn-primary:pressed { -fx-background-color: #0D47A1; }
+
+.btn-secondary {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-padding: 9 20;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: rgba(255,255,255,0.65);
+    -fx-cursor: hand;
+}
+.btn-secondary:hover { -fx-border-color: white; }
+
+.btn-success {
+    -fx-background-color: #43A047;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.btn-success:hover   { -fx-background-color: #2E7D32; }
+.btn-success:pressed { -fx-background-color: #1B5E20; }
+
+.btn-warning {
+    -fx-background-color: #FB8C00;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-padding: 9 20;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.btn-warning:hover { -fx-background-color: #E65100; }
+
+.btn-danger {
+    -fx-background-color: #E53935;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 18;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.btn-danger:hover { -fx-background-color: #B71C1C; }
+
+/* ── Feedback labels ───────────────────────────────────────────────── */
+.message-label {
+    -fx-font-size: 12px;
+    -fx-font-style: italic;
+}
+
+/* ── Dashboard ─────────────────────────────────────────────────────── */
+.dashboard-root {
+    -fx-background-color: #F5F6FA;
+}
+.dashboard-header {
+    -fx-background-color: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+}
+.welcome-label {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial";
+}
+
+/* ── TabPane ───────────────────────────────────────────────────────── */
+.main-tabpane {
+    -fx-background-color: #F5F6FA;
+    -fx-tab-min-height: 36px;
+}
+.main-tabpane .tab-header-area .tab-header-background {
+    -fx-background-color: #ECEFF1;
+}
+.main-tabpane .tab {
+    -fx-background-color: #ECEFF1;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+.main-tabpane .tab:selected {
+    -fx-background-color: white;
+}
+.main-tabpane .tab-label {
+    -fx-text-fill: #546E7A;
+}
+.main-tabpane .tab:selected .tab-label {
+    -fx-text-fill: #5C6BC0;
+}
+
+/* ── Tab content pane ──────────────────────────────────────────────── */
+.tab-content {
+    -fx-background-color: white;
+}
+.section-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #37474F;
+    -fx-font-family: "Arial";
+}
+
+/* ── Transaction ListView ──────────────────────────────────────────── */
+.transaction-list {
+    -fx-font-size: 13px;
+    -fx-background-color: #FAFAFA;
+    -fx-border-color: #E0E0E0;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+.transaction-list .list-cell {
+    -fx-padding: 9 14;
+    -fx-border-color: transparent transparent #EEEEEE transparent;
+}
+.transaction-list .list-cell:selected {
+    -fx-background-color: #E8EAF6;
+    -fx-text-fill: #3949AB;
+}
+
+/* ── Summary cards ─────────────────────────────────────────────────── */
+.summary-card {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.07), 8, 0, 0, 2);
+}
+.summary-income  { -fx-background-color: #E8F5E9; -fx-border-color: #A5D6A7; }
+.summary-expense { -fx-background-color: #FFEBEE; -fx-border-color: #EF9A9A; }
+.summary-balance { -fx-background-color: #E8EAF6; -fx-border-color: #9FA8DA; }
+
+.card-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #546E7A;
+}
+.card-value {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+.income-value  { -fx-text-fill: #2E7D32; }
+.expense-value { -fx-text-fill: #C62828; }
+.balance-value { -fx-text-fill: #283593; }

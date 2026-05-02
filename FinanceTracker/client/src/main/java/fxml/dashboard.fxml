@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="client.controllers.DashboardController"
+            styleClass="dashboard-root"
+            >
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="20" styleClass="dashboard-header">
+            <padding><Insets top="15" right="25" bottom="15" left="25"/></padding>
+            <Label fx:id="welcomeLabel" text="Welcome!" styleClass="welcome-label" HBox.hgrow="ALWAYS"/>
+            <Button fx:id="logoutBtn" text="Logout" styleClass="btn-danger"/>
+        </HBox>
+    </top>
+
+    <center>
+        <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE" styleClass="main-tabpane">
+            <Tab fx:id="addTab"     text="➕  Add Transaction"/>
+            <Tab fx:id="viewTab"    text="📋  Transactions"/>
+            <Tab fx:id="summaryTab" text="📊  Summary"/>
+        </TabPane>
+    </center>
+</BorderPane>

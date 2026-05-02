@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="client.controllers.AddTransactionController"
+      spacing="18"
+      alignment="CENTER"
+      styleClass="tab-content"
+      >
+    <padding><Insets top="30" right="60" bottom="30" left="60"/></padding>
+
+    <Label text="Add New Transaction" styleClass="section-title"/>
+    <Separator/>
+
+    <VBox spacing="5" maxWidth="380">
+        <Label text="Amount ($)" styleClass="field-label-dark"/>
+        <TextField fx:id="amountField" promptText="e.g. 50.00" styleClass="input-field-dark"/>
+    </VBox>
+    <VBox spacing="5" maxWidth="380">
+        <Label text="Type" styleClass="field-label-dark"/>
+        <ComboBox fx:id="typeBox" maxWidth="Infinity" styleClass="combo-field"/>
+    </VBox>
+    <VBox spacing="5" maxWidth="380">
+        <Label text="Category" styleClass="field-label-dark"/>
+        <ComboBox fx:id="categoryBox" maxWidth="Infinity" styleClass="combo-field"/>
+    </VBox>
+    <VBox spacing="5" maxWidth="380">
+        <Label text="Date" styleClass="field-label-dark"/>
+        <DatePicker fx:id="datePicker" maxWidth="Infinity" styleClass="date-field"/>
+    </VBox>
+
+    <Region prefHeight="10"/>
+    <Button fx:id="submitBtn" text="✔  Add Transaction" styleClass="btn-success" maxWidth="380"/>
+    <Label  fx:id="messageLabel" styleClass="message-label" wrapText="true" maxWidth="380"/>
+</VBox>

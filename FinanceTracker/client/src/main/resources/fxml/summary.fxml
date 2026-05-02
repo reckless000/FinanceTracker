@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="client.controllers.SummaryController"
+      spacing="20"
+      alignment="CENTER"
+      styleClass="tab-content"
+      >
+    <padding><Insets top="30" right="60" bottom="30" left="60"/></padding>
+
+    <Label text="Financial Summary" styleClass="section-title"/>
+    <Separator maxWidth="420"/>
+
+    <GridPane hgap="20" vgap="20" alignment="CENTER">
+
+        <VBox styleClass="summary-card summary-income"
+              GridPane.columnIndex="0" GridPane.rowIndex="0"
+              alignment="CENTER" minWidth="190">
+            <padding><Insets topRightBottomLeft="20"/></padding>
+            <Label text="💰  Total Income"   styleClass="card-title"/>
+            <Label fx:id="incomeValue" text="$0.00" styleClass="card-value income-value"/>
+        </VBox>
+
+        <VBox styleClass="summary-card summary-expense"
+              GridPane.columnIndex="1" GridPane.rowIndex="0"
+              alignment="CENTER" minWidth="190">
+            <padding><Insets topRightBottomLeft="20"/></padding>
+            <Label text="💸  Total Expenses" styleClass="card-title"/>
+            <Label fx:id="expenseValue" text="$0.00" styleClass="card-value expense-value"/>
+        </VBox>
+
+        <VBox styleClass="summary-card summary-balance"
+              GridPane.columnIndex="0" GridPane.rowIndex="1"
+              GridPane.columnSpan="2"
+              alignment="CENTER" minWidth="400">
+            <padding><Insets topRightBottomLeft="20"/></padding>
+            <Label text="🏦  Net Balance" styleClass="card-title"/>
+            <Label fx:id="balanceValue" text="$0.00" styleClass="card-value balance-value"/>
+        </VBox>
+
+    </GridPane>
+
+    <Region prefHeight="10"/>
+    <Button fx:id="refreshBtn" text="🔄  Refresh Summary" styleClass="btn-primary" maxWidth="300"/>
+    <Label  fx:id="messageLabel" styleClass="message-label"/>
+</VBox>

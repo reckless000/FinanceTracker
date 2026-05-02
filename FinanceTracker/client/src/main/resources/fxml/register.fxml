@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="client.controllers.RegisterController"
+      spacing="15"
+      alignment="CENTER"
+      styleClass="root-container"
+      >
+    <padding><Insets top="35" right="50" bottom="35" left="50"/></padding>
+
+    <Label text="📝 Create Account" styleClass="title-label"/>
+    <Label text="Join Finance Tracker today" styleClass="subtitle-label"/>
+    <Region prefHeight="10"/>
+
+    <VBox spacing="5">
+        <Label text="Username" styleClass="field-label"/>
+        <TextField fx:id="usernameField" promptText="Choose a username"
+                   styleClass="input-field" maxWidth="300"/>
+    </VBox>
+    <VBox spacing="5">
+        <Label text="Password" styleClass="field-label"/>
+        <PasswordField fx:id="passwordField" promptText="Choose a password"
+                       styleClass="input-field" maxWidth="300"/>
+    </VBox>
+    <VBox spacing="5">
+        <Label text="Confirm Password" styleClass="field-label"/>
+        <PasswordField fx:id="confirmField" promptText="Confirm your password"
+                       styleClass="input-field" maxWidth="300"/>
+    </VBox>
+    <Region prefHeight="5"/>
+
+    <Button fx:id="registerBtn" text="Create Account"  styleClass="btn-success" maxWidth="300"/>
+    <Button fx:id="backBtn"     text="← Back to Login" styleClass="btn-warning" maxWidth="300"/>
+    <Label  fx:id="messageLabel" styleClass="message-label" wrapText="true" maxWidth="300"/>
+</VBox>
